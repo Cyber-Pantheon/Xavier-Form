@@ -1,51 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexh Tech Contact Form</title>
-    <link rel="icon" href="Favicon.png" type="image/png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexh | Contact Form</title>
+  <link rel="icon" href="Favicon.png" type="image/png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2, h4, h5 {
+      text-align: center;
+    }
+
+    h2 { color: #2c3e50; font-size: 28px; }
+    h4 { font-size: 20px; color: #555; }
+    h5 { color: #2980b9; margin-bottom: 30px; }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      margin-top: 6px;
+      transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .input-group:focus-within {
+      border-color: #2980b9;
+      box-shadow: 0 0 10px rgba(41, 128, 185, 0.4);
+      transform: scale(1.02);
+    }
+
+    .input-group svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      fill: #999;
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    select, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      margin-top: 6px;
+    }
+
+    textarea:focus, select:focus {
+      border-color: #2980b9;
+      box-shadow: 0 0 10px rgba(41, 128, 185, 0.4);
+      transform: scale(1.02);
+      outline: none;
+    }
+
+    .radio-group {
+      margin: 10px 0;
+    }
+
+    .radio-group label {
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    button[type="submit"],
+    input[type="reset"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button[type="submit"] {
+      background-color: #2980b9;
+      color: #fff;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #1c598a;
+      transform: scale(1.02);
+    }
+
+    input[type="reset"] {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    input[type="reset"]:hover {
+      background-color: #c0392b;
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f0f4f8; padding: 20px; color: #333;">
+<body>
 
+<div class="container">
+  <h2>Welcome TO Nexh | Contact Form</h2>
+  <h4>Please fill in the form below:</h4>
+  <h5>Thank You!</h5>
 
+  <form action="https://formsubmit.co/naetoonyx@gmail.com" method="post" autocomplete="on">
+    <fieldset style="border: none;">
+      <label for="first_name">First Name</label>
+      <div class="input-group">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg>
+        <input type="text" id="first_name" name="first_name" placeholder="Your First Name" required />
+      </div>
 
-    <div style="max-width: 800px; margin: auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-        <h2 style="text-align: center; color: #2c3e50;">Welcome TO Nexh Tech Contact Form</h2>
-        <h4 style="text-align: center;">Please fill in the form below:</h3>
-        <h5 style="text-align: center; color: #0045;">Thank You!</h5>
+      <label for="last_name">Last Name</label>
+      <div class="input-group">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg>
+        <input type="text" id="last_name" name="last_name" placeholder="Your Last Name" required />
+      </div>
 
-        <form action="https://formsubmit.co/naetoonyx@gmail.com" method="post" name="xavier_form" target="_self" autocomplete="on" style="margin-top: 20px;">
+      <label for="email">Email Address</label>
+      <div class="input-group">
+        <svg viewBox="0 0 24 24"><path d="M12 13L2 6.76V18h20V6.76L12 13zm0-2l10-6H2l10 6z"/></svg>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required />
+      </div>
 
-            <fieldset style="border: none;">
-                <label for="first_name" style="font-weight: bold;">First Name</label><br>
-                <input type="text" name="first_name" placeholder="Your First Name" id="first_name" required
-                    style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+      <label for="dob">Date Of Birth</label>
+      <div class="input-group">
+        <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5C3.9 4 3 .9 3 2v18c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 18H5V10h14v12z"/></svg>
+        <input type="date" id="dob" name="dob" required />
+      </div>
 
-                <label for="last_name" style="font-weight: bold;">Last Name</label><br>
-                <input type="text" name="last_name" placeholder="Your Last Name" id="last_name" required
-                    style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+      <label>Gender</label>
+      <div class="radio-group">
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label>
 
-                <label for="email" style="font-weight: bold;">Email Address</label><br>
-                <input type="email" name="email" placeholder="Your Email Address" id="email" required
-                    style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Female</label>
 
-                <label for="dob" style="font-weight: bold;">Date Of Birth</label><br>
-                <input type="date" name="dob" id="dob" required
-                    style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc;"><br>
+        <input type="radio" name="gender" id="prefer_not_to_say" value="prefer_not_to_say" required>
+        <label for="prefer_not_to_say">Prefer not to say</label>
+      </div>
 
-                <label style="font-weight: bold;">Gender</label><br>
-                <input type="radio" name="gender" id="male" value="male" required>
-                <label for="male">Male</label>
-                <input type="radio" name="gender" id="female"  value="female" required>
-                <label for="female">Female</label>
-                <input type="radio" name="gender" id="prefer_not_to_say" value="prefer_not_to_say" required>
-                <label for="prefer_not_to_say">Prefer not to say</label><br><br>
-
-                <label for="country" style="font-weight: bold;">Country</label><br>
-                <select id="country" name="country" required
-                    style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc;">
-                    <option value="">Select your Country of Origin</option>
+      <label for="country">Country</label>
+      <select name="country" id="country" required>
+        <option value="">Select your Country of Origin</option>
   <option value="Afghanistan">Afghanistan</option>
   <option value="Albania">Albania</option>
   <option value="Algeria">Algeria</option>
@@ -263,32 +405,22 @@
   <option value="Yemen">Yemen</option>
   <option value="Zambia">Zambia</option>
   <option value="Zimbabwe">Zimbabwe</option>
+      </select>
 
-                </select><br>
+      <label for="comment">Message:</label>
+      <textarea id="comment" name="comment" rows="5" placeholder="Your Message..." required></textarea>
 
-                <label for="comment" style="font-weight: bold;">Message:</label><br>
-                <textarea id="comment" name="comment" rows="5" required placeholder="Your Message..."
-                    style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc;"></textarea><br>
+      <button type="submit">Submit</button>
+      <input type="reset" value="Clear all Input">
+    </fieldset>
 
-                <button type="submit"
-                    style="width: 100%; background-color: #2980b9; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">
-                    Submit
-                </button><br><br>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New NEXH Form Submission!">
+  </form>
 
-                <input type="reset" value="Clear all Input"
-                    style="width: 100%; background-color: #e74c3c; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">
-            </fieldset>
+  <h5 style="margin-top: 20px;">All Form Submissions will be sent to Nexh Tech's Email.</h5>
+  <footer>&copy; 2025 Nexh Tech. All rights reserved.</footer>
+</div>
 
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New NEXH Form Submission!">
-
-        </form>
-        <h5 style="text-align: center; margin-top: 20px;">All Form Submissions will be sent to Nexh Tech's Email.</h5>
-        
-        <footer style="text-align: center; margin-top: 30px; color: #666;">
-            &copy; 2025 Nexh Tech. All rights reserved.
-        </footer>
-
-    </div>
 </body>
 </html>
